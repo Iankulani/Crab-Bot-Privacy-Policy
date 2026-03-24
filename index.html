@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Crab-bot | Privacy Policy – Cybersecurity Command Tool</title>
+    <!-- Font Awesome 6 (free icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts: modern sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f0f7ff 0%, #e2edfc 100%);
+            color: #0a2a44;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+        }
+
+        /* Blue Theme Core */
+        :root {
+            --crab-deep: #0a2a44;
+            --crab-primary: #1e4b8f;
+            --crab-accent: #2c7cd4;
+            --crab-sky: #4b9eff;
+            --crab-light: #eef6ff;
+            --crab-card-bg: rgba(255, 255, 255, 0.96);
+            --shadow-elegant: 0 20px 35px -12px rgba(0, 32, 64, 0.12);
+        }
+
+        /* Navigation */
+        .navbar {
+            background: rgba(10, 42, 68, 0.95);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            border-bottom: 1px solid rgba(75, 158, 255, 0.3);
+        }
+        .nav-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0.9rem 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo i {
+            font-size: 2rem;
+            color: #7bc5ff;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+        }
+        .logo h1 {
+            font-size: 1.7rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #ffffff, #b8d6ff);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .logo span {
+            font-size: 0.75rem;
+            background: #2c7cd4;
+            padding: 2px 10px;
+            border-radius: 40px;
+            color: white;
+            font-weight: 500;
+            margin-left: 6px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        .nav-links a {
+            color: #f0f7ff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.2s;
+            font-size: 0.95rem;
+        }
+        .nav-links a:hover {
+            color: #ffda85;
+        }
+        .btn-outline {
+            border: 1px solid #4b9eff;
+            padding: 6px 18px;
+            border-radius: 40px;
+            background: transparent;
+            transition: 0.2s;
+        }
+        .btn-outline:hover {
+            background: #2c7cd4;
+            border-color: #2c7cd4;
+            color: white;
+        }
+
+        /* Hero Section Privacy */
+        .privacy-hero {
+            background: radial-gradient(ellipse at 70% 20%, #0f3a62, #05203b);
+            padding: 3rem 2rem;
+            text-align: center;
+            color: white;
+            border-bottom: 3px solid #4b9eff;
+        }
+        .hero-badge {
+            background: rgba(44, 124, 212, 0.25);
+            backdrop-filter: blur(4px);
+            display: inline-block;
+            padding: 0.3rem 1.2rem;
+            border-radius: 60px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-bottom: 1.2rem;
+        }
+        .privacy-hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.8rem;
+        }
+        .privacy-hero p {
+            font-size: 1.2rem;
+            max-width: 750px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+        .last-updated {
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            opacity: 0.7;
+        }
+
+        /* Main container */
+        .container {
+            max-width: 1300px;
+            margin: 2.5rem auto;
+            padding: 0 2rem 3rem;
+        }
+
+        /* Privacy Card */
+        .privacy-card {
+            background: var(--crab-card-bg);
+            border-radius: 2rem;
+            box-shadow: var(--shadow-elegant);
+            border: 1px solid rgba(44, 124, 212, 0.25);
+            overflow: hidden;
+            transition: all 0.2s;
+        }
+        .card-header {
+            background: linear-gradient(105deg, #0e2f50, #1b4a7a);
+            padding: 1.6rem 2rem;
+        }
+        .card-header h2 {
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .card-header h2 i {
+            color: #7bc5ff;
+            font-size: 2rem;
+        }
+        .privacy-body {
+            padding: 2rem 2rem 2rem 2rem;
+        }
+        .privacy-section {
+            margin-bottom: 2.2rem;
+            border-left: 4px solid #2c7cd4;
+            padding-left: 1.5rem;
+            transition: 0.1s;
+        }
+        .privacy-section h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+            color: #0a3a62;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .privacy-section h3 i {
+            color: #2c7cd4;
+            font-size: 1.4rem;
+        }
+        .privacy-section p, .privacy-section li {
+            color: #1f334b;
+            margin-bottom: 0.8rem;
+            font-size: 1rem;
+        }
+        .privacy-section ul {
+            margin-left: 1.8rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.8rem;
+        }
+        .highlight-badge {
+            background: #e2effb;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-family: monospace;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #0a2a44;
+        }
+        .data-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .data-item {
+            background: #f0f7fe;
+            border-radius: 1rem;
+            padding: 0.6rem 1.2rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            border: 1px solid #cde2fc;
+        }
+        .consent-box {
+            background: #eef3fc;
+            border-radius: 1.2rem;
+            padding: 1.2rem 1.5rem;
+            margin: 1rem 0;
+            border-left: 5px solid #4b9eff;
+        }
+        footer {
+            background: #e9f1fa;
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid #caddf0;
+            color: #2c527a;
+            font-size: 0.85rem;
+        }
+        .cookie-toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #0a2a44;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            z-index: 999;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            backdrop-filter: blur(8px);
+            border: 1px solid #4b9eff;
+        }
+        .cookie-toast button {
+            background: #2c7cd4;
+            border: none;
+            color: white;
+            padding: 5px 14px;
+            border-radius: 40px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        @media (max-width: 700px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+            .privacy-hero h1 {
+                font-size: 2rem;
+            }
+            .privacy-body {
+                padding: 1.5rem;
+            }
+            .privacy-section {
+                padding-left: 1rem;
+            }
+        }
+        .btn-back {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #2c7cd4;
+            text-decoration: none;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <i class="fas fa-crab"></i>
+            <h1>Crab-bot<span>PRIVACY</span></h1>
+        </div>
+        <div class="nav-links">
+            <a href="#privacy-policy"><i class="fas fa-lock"></i> Policy</a>
+            <a href="#data-rights"><i class="fas fa-user-shield"></i> Your Rights</a>
+            <a href="#" class="btn-outline"><i class="fas fa-envelope"></i> Data Request</a>
+        </div>
+    </div>
+</nav>
+
+<section class="privacy-hero">
+    <div class="hero-badge"><i class="fas fa-shield-horned"></i>  Zero trust · Data minimalism</div>
+    <h1><i class="fas fa-file-alt"></i> Privacy Policy</h1>
+    <p>Your security, command transparency & data sovereignty — Crab-bot protects your privacy across Telegram, Discord, WhatsApp, Slack, Signal, Google Chat & iMessage.</p>
+    <div class="last-updated"><i class="far fa-calendar-alt"></i> Last updated: March 24, 2026 | Version 2.0</div>
+</section>
+
+<div class="container" id="privacy-policy">
+    <div class="privacy-card">
+        <div class="card-header">
+            <h2><i class="fas fa-dragon"></i> Crab-bot Privacy Commitment</h2>
+        </div>
+        <div class="privacy-body">
+            <div class="consent-box">
+                <i class="fas fa-eye" style="margin-right: 10px; color:#1e6bc7;"></i> 
+                <strong>Privacy-first philosophy:</strong> Crab-bot is a cybersecurity command executor. We collect only essential data to enable command execution, audit trails, and platform security. No message content is sold, mined, or exposed to third parties.
+            </div>
+
+            <div class="privacy-section">
+                <h3><i class="fas fa-database"></i> 1. Information We Collect</h3>
+                <p>When you interact with Crab-bot via any integrated messaging app, we process minimal operational data:</p>
+                <div class="data-grid">
+                    <span class="data-item"><i class="fab fa-telegram"></i> User ID (platform)</span>
+                    <span class="data-item"><i class="fas fa-terminal"></i> Command history (encrypted, 30d retention)</span>
+                    <span class="data-item"><i class="fas fa-clock"></i> Timestamps & session tokens</span>
+                    <span class="data-item"><i class="fas fa-network-wired"></i> Execution logs (non-content)</span>
+                </div>
+                <ul>
+                    <li><strong>Account Identifiers:</strong> Unique user IDs from Telegram/Discord/WhatsApp etc. – used to authenticate and route commands.</li>
+                    <li><strong>Command Payloads:</strong> The exact commands you fire (e.g., <span class="highlight-badge">nmap -sV target</span> or <span class="highlight-badge">./custom-script</span>) are temporarily logged for audit and troubleshooting. Content of messages (non-command) is never stored.</li>
+                    <li><strong>Metadata:</strong> Platform type, timestamp, response success/failure codes.</li>
+                    <li><strong>No sensitive content:</strong> We do not collect message text outside command prefixes, nor media files unless explicitly uploaded via command arguments (which are processed ephemerally).</li>
+                </ul>
+            </div>
+
+            <div class="privacy-section">
+                <h3><i class="fas fa-cogs"></i> 2. How We Use Your Information</h3>
+                <p>Data collected powers the core functionality of Crab-bot and improves security posture:</p>
+                <ul>
+                    <li>✅ Execute commands across your favorite chat apps with proper authorization.</li>
+                    <li>✅ Maintain audit trails for forensic analysis & compliance (red team operations).</li>
+                    <li>✅ Detect abuse, prevent unauthorized access, and ensure service stability.</li>
+                    <li>✅ Aggregate anonymized metrics (e.g., number of commands per platform) to enhance performance.</li>
+                </ul>
+                <p><i class="fas fa-chart-line"></i> We never use your data for advertising, profiling, or any unrelated marketing activities.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h3><i class="fas fa-handshake"></i> 3. Data Sharing & Third Parties</h3>
+                <p>Crab-bot does <strong>NOT</strong> sell, rent, or trade your personal data. Limited sharing occurs only in these scenarios:</p>
+                <ul>
+                    <li><i class="fas fa-shield-alt"></i> <strong>Legal compliance:</strong> If required by law enforcement or court order (we evaluate each request).</li>
+                    <li><i class="fas fa-tools"></i> <strong>Service providers:</strong> Cloud infrastructure (encrypted databases) & logging services – all bound by strict NDA and data processing agreements.</li>
+                    <li><i class="fas fa-bug"></i> <strong>Security emergencies:</strong> To address vulnerabilities, abuse, or imminent threats to infrastructure.</li>
+                </ul>
+                <p>Integrated platforms (Telegram, Discord, etc.) have their own privacy policies; we encourage you to review them. Crab-bot merely acts as a bridge for command execution and does not transfer personal data to them beyond the user ID required for messaging APIs.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h3><i class="fas fa-globe"></i> 4. Data Retention & Deletion</h3>
+                <p>We retain command execution logs for <strong>30 days</strong> for operational security and troubleshooting. After this period, logs are automatically purged from our active systems. You can request earlier deletion:</p>
+                <div class="consent-box">
+                    <i class="fas fa-trash-alt"></i> <strong>Your control:</strong> Send <span class="highlight-badge">/delete_my_data</span> via any connected chat app or email <strong>privacy@crab-bot.io</strong>. Your command history, user mapping, and session data will be erased within 72 hours (excluding anonymized aggregates).
+                </div>
+                <p>Self-hosted instances: Data management is entirely under your control. For cloud-hosted Crab-bot, retention is as described.</p>
+            </div>
+
+            <div class="privacy-section" id="data-rights">
+                <h3><i class="fas fa-user-lock"></i> 5. Your Privacy Rights</h3>
+                <p>Depending on your location Mzimba, Boma you have the following rights:</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> <strong>Right to Access:</strong> Obtain a copy of your personal data held by Crab-bot.</li>
+                    <li><i class="fas fa-eraser"></i> <strong>Right to Deletion:</strong> Request permanent removal of your data.</li>
+                    <li><i class="fas fa-sync-alt"></i> <strong>Right to Rectification:</strong> Correct any inaccurate information.</li>
+                    <li><i class="fas fa-ban"></i> <strong>Right to Opt-out:</strong> Disable command execution & bot access anytime by removing the bot from your chat app.</li>
+                </ul>
+                <p>To exercise rights, contact our Data Protection Officer via <i class="fas fa-envelope"></i> <strong>accuratecyberdefense@tutamail.com</strong>. We will respond within 30 days.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h3><i class="fas fa-laptop-code"></i> 6. Security Measures</h3>
+                <p>We implement industry-standard security: </p>
+                <ul>
+                    <li>🔐 <strong>Encryption:</strong> All command logs & user identifiers stored in AES-256 encrypted databases.</li>
+                    <li>🛡️ <strong>API authentication:</strong> Unique tokens per platform, MFA where supported.</li>
+                    <li>📡 <strong>Audit trails:</strong> Every command is associated with a tamper-proof hash.</li>
+                    <li>🌐 <strong>Network isolation:</strong> Crab-bot runs in isolated containers with strict egress controls.</li>
+                </ul>
+                <p>Despite best efforts, no system is 100% immune. We conduct regular penetration tests and bug bounties.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h3><i class="fas fa-child"></i> 7. Children's Privacy</h3>
+                <p>Crab-bot is not intended for individuals under 18 years old. We do not knowingly collect data from minors. If we become aware of such data, we will delete it immediately.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h3><i class="fas fa-cookie-bite"></i> 8. Cookies & Tracking Technologies</h3>
+                <p>The Crab-bot website uses essential cookies for authentication and preference storage. No third-party tracking or analytics cookies are deployed without consent. You may disable cookies via browser settings, but some site features may be affected. The bot itself does not use browser cookies.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h3><i class="fas fa-gavel"></i> 9. Changes to This Privacy Policy</h3>
+                <p>We may update this policy to reflect operational changes or legal requirements. Material changes will be announced via our community channels and the effective date at the top of this page. Continued use of Crab-bot after modifications constitutes acceptance.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h3><i class="fas fa-comments"></i> 10. Contact Information</h3>
+                <p>For privacy inquiries, data requests, or security concerns:</p>
+                <p><i class="fas fa-inbox"></i> Email: <strong>accuratecyberdefense@tutamail.com</strong><br>
+                <i class="fab fa-github"></i> GitHub Issues: <strong>https://github.com/Accurate-Cyber-Defense</strong><br>
+                <i class="fas fa-map-marker-alt"></i> Accurate Cyber Defense, Privacy Office:Online, Mzimba, Boma, Malawi</p>
+            </div>
+
+            <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #cce0f5; text-align: center; font-size: 0.8rem;">
+                <i class="fas fa-shield-virus"></i> Transparency is our shell. Crab-bot keeps your cybersecurity operations private.
+            </div>
+        </div>
+    </div>
+
+    <!-- Complementary social & trust signals (blue themed) -->
+    <div style="margin-top: 2.5rem; background: #eef3fc; border-radius: 2rem; padding: 1.5rem; text-align: center;">
+        <h4 style="color: #0a2a44;"><i class="fas fa-hand-peace"></i> Your data, your command line</h4>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.2rem; margin-top: 1rem;">
+            <span><i class="fab fa-telegram"></i> Telegram Audit</span>
+            <span><i class="fab fa-discord"></i> Discord Logs</span>
+            <span><i class="fab fa-whatsapp"></i> WhatsApp E2E</span>
+            <span><i class="fas fa-shield-haltered"></i> SOC2 Type II (pending)</span>
+        </div>
+        <p style="margin-top: 1rem; font-size: 0.85rem;">Crab-bot implements strict data minimization — we only log what’s necessary to execute your commands and maintain operational security.</p>
+    </div>
+</div>
+
+<footer>
+    <p><i class="fas fa-crab"></i> Crab-bot – Privacy-respecting cybersecurity command execution engine. <br>Integrated with Telegram · Discord · WhatsApp · Slack · Signal · Google Chat · iMessage</p>
+    <p style="margin-top: 0.5rem;">© 2026 Crab-bot | All rights reserved | <a href="#" style="color:#1e6bc7; text-decoration: none;">Privacy Center</a> | <a href="#" style="color:#1e6bc7; text-decoration: none;">DPO Contact</a></p>
+</footer>
+
+<!-- JavaScript: interactive cookie consent simulation, data deletion demo, and privacy awareness -->
+<script>
+    (function() {
+        // simulate cookie consent banner (just for interactive demonstration)
+        if(!localStorage.getItem('crab_privacy_consent')) {
+            const toast = document.createElement('div');
+            toast.className = 'cookie-toast';
+            toast.innerHTML = `
+                <i class="fas fa-cookie-bite"></i>
+                <span>We use essential cookies to enhance your experience. No tracking.</span>
+                <button id="acceptCookies">Got it</button>
+            `;
+            document.body.appendChild(toast);
+            document.getElementById('acceptCookies').addEventListener('click', () => {
+                localStorage.setItem('crab_privacy_consent', 'true');
+                toast.style.opacity = '0';
+                setTimeout(() => toast.remove(), 300);
+            });
+        }
+
+        // interactive command to simulate data deletion request (via alert simulation)
+        const deleteBtn = document.querySelector('.btn-outline');
+        if(deleteBtn) {
+            deleteBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const modalDiv = document.createElement('div');
+                modalDiv.style.position = 'fixed';
+                modalDiv.style.top = '0';
+                modalDiv.style.left = '0';
+                modalDiv.style.width = '100%';
+                modalDiv.style.height = '100%';
+                modalDiv.style.backgroundColor = 'rgba(0,0,0,0.5)';
+                modalDiv.style.backdropFilter = 'blur(4px)';
+                modalDiv.style.display = 'flex';
+                modalDiv.style.alignItems = 'center';
+                modalDiv.style.justifyContent = 'center';
+                modalDiv.style.zIndex = '1000';
+                modalDiv.innerHTML = `
+                    <div style="background: white; max-width: 400px; border-radius: 2rem; padding: 1.8rem; text-align: center; box-shadow: 0 20px 35px rgba(0,0,0,0.2);">
+                        <i class="fas fa-trash-alt" style="font-size: 2.5rem; color:#2c7cd4;"></i>
+                        <h3 style="margin: 1rem 0;">Request Data Deletion</h3>
+                        <p>Send a deletion request to accuratecyberdefense@tutamail.com or use command <strong style="background:#eef2fa; padding:4px 8px; border-radius: 20px;">/delete_my_data</strong> in any connected chat app.</p>
+                        <button id="closeModal" style="background: #1e4b8f; color:white; border: none; padding: 8px 22px; border-radius: 40px; margin-top: 1rem; cursor: pointer;">Close</button>
+                    </div>
+                `;
+                document.body.appendChild(modalDiv);
+                document.getElementById('closeModal').addEventListener('click', () => modalDiv.remove());
+            });
+        }
+
+        // Adding interactive hover effect to sections and nice console log for privacy
+        console.log("%c🦀 Crab-bot Privacy: Your data is never sold. Command logs auto-purge after 30 days. Control your data.", "color: #1e4b8f; font-size: 13px; font-weight: bold;");
+        
+        // dynamic year update
+        const footer = document.querySelector('footer p:last-child');
+        
+        // additional little widget: show last updated info tooltip for users
+        const sections = document.querySelectorAll('.privacy-section h3');
+        sections.forEach(section => {
+            section.style.cursor = 'pointer';
+            section.addEventListener('click', () => {
+                // just subtle effect: show a small message about transparency
+                const msg = document.createElement('div');
+                msg.innerText = '🔒 Crab-bot privacy-first approach — read details above.';
+                msg.style.position = 'fixed';
+                msg.style.bottom = '80px';
+                msg.style.right = '20px';
+                msg.style.backgroundColor = '#0a2a44';
+                msg.style.color = '#bbdbff';
+                msg.style.padding = '8px 16px';
+                msg.style.borderRadius = '30px';
+                msg.style.fontSize = '0.75rem';
+                msg.style.zIndex = '998';
+                msg.style.opacity = '0.9';
+                document.body.appendChild(msg);
+                setTimeout(() => { msg.style.opacity = '0'; setTimeout(() => msg.remove(), 1500); }, 1500);
+            });
+        });
+    })();
+</script>
+</body>
+</html>
